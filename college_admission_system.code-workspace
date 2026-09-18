@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../.vscode/.vscode"
+		},
+		{
+			"path": "../.vscode/__pycache__"
+		},
+		{
+			"path": "../.vscode/cli"
+		},
+		{
+			"path": "../.vscode/extensions"
+		},
+		{
+			"path": "../.vscode/templates"
+		}
+	],
+	"settings": {}
+}

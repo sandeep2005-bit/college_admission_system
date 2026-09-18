@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Dashboard</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        .dashboard{
+            width: 700px;
+            margin: 50px auto;
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px gray;
+        }
+
+        .menu-btn{
+            width: 250px;
+            padding: 15px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .register{
+            background: #007bff;
+        }
+
+        .students{
+            background: #28a745;
+        }
+
+        .logout{
+            background: #dc3545;
+        }
+
+        .profile{
+            background: #6f42c1;
+        }
+
+        .menu-btn:hover{
+            opacity: 0.9;
+        }
+
+        h1{
+            color: #003366;
+        }
+
+        p{
+            color: #666;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <h1>College Admission Dashboard</h1>
+
+    <p>Welcome to College Admission Management System</p>
+
+    <br>
+
+    <a href="/registerpage">
+        <button class="menu-btn register">
+            Add New Student
+        </button>
+    </a>
+
+    <br>
+
+    <a href="/students">
+        <button class="menu-btn students">
+            View All Students
+        </button>
+    </a>
+
+    <br>
+
+    <a href="/loginpage">
+        <button class="menu-btn profile">
+            Student Login
+        </button>
+    </a>
+
+    <br>
+
+    <a href="/">
+        <button class="menu-btn logout">
+            Logout
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>

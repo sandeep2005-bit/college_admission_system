@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Admin Login</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+<style>
+
+body{
+    background: linear-gradient(
+    135deg,
+    #ff9966,
+    #ff5e62
+    );
+}
+
+.admin-box{
+    width:400px;
+    margin:80px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 0px 20px black;
+}
+
+h1{
+    text-align:center;
+    color:#003366;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="admin-box">
+
+<h1>Admin Login</h1>
+
+<form action="/adminlogin" method="POST">
+
+<input type="email"
+name="email"
+placeholder="Admin Email"
+required>
+
+<input type="password"
+name="password"
+placeholder="Password"
+required>
+
+<button type="submit">
+Login
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

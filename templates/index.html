@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission System</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        .home-container{
+            width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px gray;
+        }
+
+        .btn{
+            width: 250px;
+            padding: 15px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .register{
+            background-color: #007bff;
+        }
+
+        .login{
+            background-color: #28a745;
+        }
+
+        .dashboard{
+            background-color: #6f42c1;
+        }
+
+        .btn:hover{
+            opacity: 0.9;
+        }
+
+        h1{
+            color: #003366;
+        }
+
+        p{
+            color: #555;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="home-container">
+
+    <h1>College Admission Management System</h1>
+
+    <p>
+        Welcome to the Online College Admission Portal.
+        Students can register, check merit status,
+        view allotment details, and track admission progress.
+    </p>
+
+    <br>
+
+    <a href="/registerpage">
+        <button class="btn register">
+            Student Registration
+        </button>
+    </a>
+
+    <br>
+
+    <a href="/loginpage">
+        <button class="btn login">
+            Student Login
+        </button>
+    </a>
+
+    <br>
+
+    <a href="/dashboard">
+        <button class="btn dashboard">
+            Admin Dashboard
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>
